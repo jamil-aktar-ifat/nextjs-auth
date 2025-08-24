@@ -1,4 +1,4 @@
-# Next.Js-Authentication-Starter-Pack
+# Next.Js-Authentication
 
 ## Installation:
 

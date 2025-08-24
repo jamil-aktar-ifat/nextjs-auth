@@ -65,7 +65,7 @@ const LoginPage = () => {
                 id="password"
                 type="password"
                 {...register("password")}
-                placeholder="Email"
+                placeholder="Password"
                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm  sm:text-sm"
                 required
               />
