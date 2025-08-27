@@ -18,7 +18,7 @@ const RegisterPage = () => {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<UserData>();
+  } = useForm<UserData>(); 
 
   const router = useRouter();
 
