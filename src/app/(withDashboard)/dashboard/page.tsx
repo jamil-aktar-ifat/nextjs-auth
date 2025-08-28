@@ -23,7 +23,10 @@ const DashboardPage = async () => {
         Email: {session.user?.email}
       </h1>
       <Image
-        src={session.user?.image || "/default-profile.png"}
+        src={
+          session.user?.image ||
+          "https://cdn.pixaboy.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+        }
         width={200}
         height={200}
         alt={session.user?.name || "Default profile"}

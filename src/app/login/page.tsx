@@ -15,6 +15,7 @@ const LoginPage = () => {
   const {
     register,
     handleSubmit,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     formState: { errors },
   } = useForm<FormValues>();
 
@@ -31,6 +32,7 @@ const LoginPage = () => {
         localStorage.setItem("accessToken", res.accessToken);
         router.push("/");
       }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
       console.error(err.message);
       throw new Error(err.message);
@@ -115,7 +117,8 @@ const LoginPage = () => {
             <button
               onClick={() => {
                 signIn("google", {
-                  callbackUrl: "http://localhost:3000/dashboard",
+                  callbackUrl:
+                    "https://nextjs-authentication-blond.vercel.app/dashboard",
                 });
               }}
               className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
@@ -131,7 +134,8 @@ const LoginPage = () => {
               className="flex items-center justify-center w-12 h-12 bg-gray-100 rounded-full shadow-md hover:bg-gray-200"
               onClick={() =>
                 signIn("github", {
-                  callbackUrl: "http://localhost:3000/dashboard",
+                  callbackUrl:
+                    "https://nextjs-authentication-blond.vercel.app/dashboard",
                 })
               }
             >
